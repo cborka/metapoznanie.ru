@@ -1,0 +1,763 @@
+/* ========= РАЗМЕТКА СТРАНИЦЫ  ========= #930 */
+html {
+}
+
+body {
+	margin: 0;
+	background: white;
+
+	font-family: Arial, Tahoma, Verdana, Georgia, 'Times New Roman', Times, serif;
+}
+
+DIV.head, DIV.footer, DIV.wrapper_1, DIV.center, DIV.leftcol, DIV.rightcol {
+	margin: 0;
+	padding: 0;
+}
+DIV.head, DIV.footer, DIV.wrapper_1 {
+	margin-left: 1%;
+	margin-right: 1%;
+	width: 97%; /* Так не плывёт в IE 6 */
+}
+DIV.head, DIV.footer {
+}
+DIV.head {
+	margin-top: 5px;
+	margin-bottom: 0px;
+
+}
+DIV.footer {
+	margin-bottom: 5px;
+	position: relative; /* Нужно для задания абсолютной позиции внутренних блоков */
+}
+DIV.wrapper_1 {
+	overflow: auto;
+}
+
+DIV.center, DIV.leftcol, DIV.rightcol {
+}
+DIV.leftcol {
+	float: left;
+	width: 16%;
+	/*widthx: 23%;*/
+
+	/*background-colorx: #eee;*/
+}
+DIV.rightcol {
+	float: right;
+	width: 32%;
+	/*widthx: 23%;*/
+
+	/*background-colorx: #eee;*/
+}
+DIV.center {
+	float: left;
+	width: 49%;
+	widthx: 51%;
+
+	margin-left: 1.35%; /* 1% - for IE 6 see comment at the END of this file */
+	margin-right: 1%;
+}
+
+
+
+/* ================== ЗАГОЛОВКИ  ================== */
+
+H1, H2, H3, H4, H5, H6 {
+	margin:  0px 0px 5px 0;
+	padding: 0px;
+
+	color: #909;
+}
+
+/* ========= ПАРАГРАФЫ  ========= */
+
+span.p {
+	margin: 0 5px 0 5px;
+	padding: 0 10px 0 10px;
+	margin: 0;
+	padding: 0;
+}
+.p9 {
+	font-size: 9pt;
+}
+p.p9 {
+	margin: 0;
+	padding: 0;
+	font-size: 9pt;
+}
+p.plotno {
+	line-height: 0;
+}
+p.plotno1 {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}.plotno {
+	 margin: 0;
+	 padding: 0;
+ }
+
+/* =================================  ШАПКА ================================= */
+/* Логотип */
+DIV.logo {
+	margin: 5px;
+	float: left;
+	width: 67px;
+	height: 67px;
+	background-color: inherit;
+}
+DIV.logbuttons
+{
+	margin: 1px 0px 0px 0px;
+	width: 123px;
+	overflowx: visible;
+}
+/* Регистрация */
+DIV.reg {
+	float: right;
+	overflow: hidden;
+	background-color: inherit;
+	color: #dcdcdc;
+	border: 0px solid;
+	width: 123px;
+	padding: 5px 1px 0px 0px;
+	margin: 5px 1px 0px 0px;
+}
+input.logname {
+	margin: 1px 5px 1px 0px;
+	border: 1px solid;
+	border-color: #dcdcdc;
+	font-size: 9pt;
+	width: 116px;
+}
+.lognameuser {
+	color: #00a650;
+	font-weight: bold;
+}
+.lognameadmin {
+	font-weight: bold;
+	color: #ff0000;
+}
+input.logbutton {
+	font-size: smaller;
+	overflow: auto;
+}
+
+/* ТИТУЛ */
+DIV.hd2 {
+	margin-bottom: 0px;
+	padding: 0px;
+	height: 77px;
+}
+p.titul {
+	padding: 10px;
+	margin-top: 10px;
+	text-align: center;
+	/*font-weightx: bold;*/
+	font-size: 34pt;
+	font-style: italic;
+}
+span.meta {
+	color: #a0a;
+}
+span.poznanie {
+	color: #909;
+}
+
+
+/* ШАПКА: Полоса основного меню */
+DIV.hdmenu {
+	margin: 0px;
+	background-color: #ddd;
+	color: #444;
+}
+
+DIV.menuitem {
+	padding: 0px 0px 0px 0px;
+	display: inline-block;
+	float: left;
+	background-color: #ddd;
+	border-right: 1px solid;
+	border-color: #ccc;
+}
+
+p.mmi, p.mmi5, p.mmired {
+	margin: 0px 0px 0px 0px;
+	padding: 10px;
+	display: inline-block;
+	font-size: 12pt;
+	color: #444;
+	background-color: #ddd;
+}
+
+p.mmi:hover, p.mmired:hover {
+	background-color: #444;
+	color: #ddd;
+}
+
+
+/* ==============================  НИЗ  Footer ============================== */
+/* Полоса основного меню */
+DIV.ftmenu {
+	margin: 3px;
+	background-color: #ddd; /* gainsboro */
+	color: #444;
+}
+p.mmi2 {
+	margin: 0px 0px 0px 0px;
+	padding: 7px;
+	display: inline-block;
+	color: #444;
+	background-color: #ddd;
+}
+DIV.ftright {
+	float: right;
+}
+
+
+DIV.footerleft {
+	float: left;
+	width: 23%;
+}
+DIV.footerright {
+	float: right;
+	width: 23%;
+}
+DIV.footercenter {
+	float: left;
+	width: 49%;
+
+	margin-left: 1.35%; /* 1% - for IE 6 see comment at the END of this file */
+	margin-right: 1%;
+}
+
+
+DIV.ibleft {
+	display: inline-block;
+	float: left;
+}
+DIV.ibnone {
+	display: inline-block;
+	float: none;
+}
+DIV.ibright {
+	display: inline-block;
+	float: right;
+}
+/* СТАТИСТИКА */
+p.stat {
+	margin-top: 3px;
+	margin-bottom: 0;
+	padding: 1px;
+	text-align: center;
+	font-size: smaller;
+	color: #626262;
+	border: 0px solid;
+	border-color: #606;
+}
+
+DIV.statpro {
+	float: right;
+	/*positionx: absolute;*/
+	/*bottomx: 0;*/
+	/*rightx: 0;*/
+
+	margin: 0px;
+	padding: 0px;
+
+	border: 1px solid;
+	border-color: #dcdcdc; /* gainsboro */
+}
+/*
+.mpstat {
+	padding: 5px;
+	margin: 0;
+	text-align: left;
+	color: #606;
+	position: absolute;
+	left: 15px;
+	bottom: 0;
+}
+*/
+
+hr {
+	margin: 5px;
+	padding: 0;
+	color: #f9f;
+}
+
+/* ========================== Текст статьи блога  ============================ */
+
+DIV.divtxt, DIV.divtxtb, DIV.divtxtbp, DIV.divcomm {
+	font-family: Verdana, Arial, Tahoma, Georgia, 'Times New Roman', Times, serif;
+	margin: 5px 0 5px 0;
+	padding: 5px 5px 5px 5px;
+
+	color: #222;
+	/*background-colorx: #f1f1f1;*/
+
+	line-height: 1.55;
+	font-size: 10pt;
+}
+DIV.divcomm {
+	font-size: 9pt;
+}
+DIV.divtxtb {
+	border: 1px solid;
+	border-color: #f9f;
+}
+
+DIV.divtxtbp { /* С фоновой картинкой */
+	border: 0px solid;
+	border-color: #f9f;
+	margin: 0px;
+	padding: 5%;
+	background-image: url('/img/fon1.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 0px solid;
+	border-color: #707;
+
+}
+H2.h2main {
+	color: #707;
+	text-align: center;
+}
+H3.h3main {
+	color: #707;
+	text-align: center;
+}
+
+
+DIV.btntxt {
+	float: right;
+	overflow: hidden;
+
+	/*background-colorx: #f1f1f1;*/
+	/*background-colorx: red;*/
+
+	border: 0px solid;
+	border-color: #ccc;
+
+	padding: 0px;
+	margin: 0px 0px 0px 3px;
+}
+
+p.txt, p.txtplotno, blockquote.bctxt, pre.pretxt,
+h1.h1txt, h2.h2txt, h3.h3txt, h4.h4txt, h5.h5txt, h6.h6txt, h3.h3hdr {
+	padding: 0;
+	margin: 0;
+}
+a.atxt {
+	paddingx: 0;
+	margin: 0;
+}
+p.txtplotno {
+	line-height: 1;
+	font-size: smaller;
+}
+h2.h3hdr {
+	margin: 0px 0px -5px 0px;
+	padding: 0px 0px 0px 0px
+}
+H2.h3hdr:hover {
+	text-decoration: none;
+	color: #707;
+}
+
+DIV.i, DIV.i p {
+	line-height: 1.35;
+	color: #444;
+	font-size: 11pt;
+}
+p.txt {
+	marginx: 0px 0px 0px 0px;
+	/*font-sizex: 11pt;*/
+}
+
+/* ========= Цитата  ========= */
+blockquote.bctxt {
+	/*font-sizex: 11pt;*/
+	/*font-sizex: smaller;*/
+	line-height: 1.3;
+	color: #222;
+	/*background-colorx: #f1f1f1;*/
+
+	border: 1px solid;
+	border-color: #ddd ;
+
+	padding: 10px;
+	margin: 0px 5px 0px 25px;;
+
+}
+
+/* ========= Полоски информации над и под текстом  ========= */
+DIV.til, DIV.hdtxt, DIV.fttxt {
+	background-color: #ddd;
+	color: #444;
+	font-size: 9pt;
+	margin: 0;
+	padding:  0 1% 0 1%;
+	border: 1px solid;
+	border-color: #ddd;
+	border-right: 0px;
+	border-left: 0px;
+}
+DIV.hdtxt {
+}
+DIV.fttxt {
+	background-color: #fff;
+	margin-top: 10px;
+}
+span.hdtxt2 {
+	color: #444;
+}
+
+
+
+td.tir {
+	border-left: 0px;
+}
+
+/*
+** ================================ ВВОД ДАННЫХ ================================
+*/
+
+/* ======= Таблицы ======= */
+table.t {
+	margin: 0 0% 0 0%;
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 99%;
+	vertical-align: top;
+}
+td {
+	padding-right: 3px;
+	padding-left: 5px;
+	border: 1px solid #c0c;
+	vertical-align: top;
+}
+
+/* ======= Таблица для ввода данных ======= */
+table.ed {
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border: 0px solid #c0c;
+	width: 100%;
+	vertical-align: bottom;
+}
+
+td.r {
+	border: 0px solid black;
+	padding-right: 0px;
+	padding-left: 5px;
+}
+td.l, td.l9 {
+	border: 0px solid black;
+	color: #444;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+td.l9 {
+	font-size: 9pt;
+}
+
+/* ================= Область редактирования текста =================== */
+textarea, input, iframe {
+	/*font-familyx: Arial, Tahoma, Verdana, Georgia, 'Times New Roman', Times, serif;*/
+	/*font-sizex: 11pt;*/
+}
+
+input, select {
+	border: 1px solid;
+	border-color: #ccc ;
+	margin: 0;
+}
+input.dt9 {
+	font-size: 9pt;
+}
+input.dtyear {
+	/*widthx: 41px;*/
+	text-align: center;
+}
+input.dtmonth {
+	width: 17px;
+	text-align: center;
+}
+input.text {
+	width: 99%
+}
+input.ro {
+	color: gray;
+}
+input.rq {
+	font-weight: bold;
+}
+input.rq909 {
+	color: #909;
+}
+input.inf1 {
+	font-size: 9pt;
+	width: 41px;
+	color: gray;
+	padding-left: 0px;
+
+	text-align: center;
+}
+input.num {
+	width: 64px;
+}
+
+input.link {
+	border: none;
+
+	color: blue;
+	text-decoration: underline;
+	background-color: inherit;
+	cursor: pointer;
+}
+
+input.btn, input.btn9 {
+	cursor: pointer;
+	color: #444;
+	background-color: #ddd;
+	border-right:  1px solid #ccc;
+	border-left:  0px solid #ccc;
+}
+input.btn9 {
+	font-size: 9pt;
+	border:  0px;
+}
+input.btn:hover, input.btn9:hover {
+	background-color: #444;
+	color: #ddd;
+}
+select {
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+iframe.ed {
+	margin: 0;
+	/*widthx: 95%;*/
+	height: 150px;
+
+	border: 1px solid;
+	border-color: #ccc;
+}
+
+textarea.ed {
+	margin: 0;
+	width: 99%;
+	height: 150px;
+
+	border: 1px solid;
+	border-color: #ccc;
+}
+.show-txt {
+	border: 1px solid #ccc;
+	margin: 0;
+	padding: 0;
+	widthx: 95%;
+}
+
+
+/* ============================== Левая колонка ============================= */
+
+/* =========== Дерево категорий ============= */
+
+input.catnm, input.catnm2, input.catnm3, input.catnm4, input.catnm5, input.catnm6, input.catnm7, input.catnmb {
+	font-size: 9pt;
+	border-width: 0;
+	background-color: inherit;
+	color: #0171bb; /* голубой */
+	cursor: pointer;
+	padding:  0;
+	margin: 0;
+}
+
+input.catnm2 {
+	color: #0054a5; /* синий */
+	font-size: 9pt;
+}
+input.catnm3, input.catnm6 {
+	color: #2e3192; /* тёмносиний */
+	font-size: 9pt;
+}
+input.catnm4, input.catnm7 {
+	color: #0171bb;
+	font-size: 9pt;
+}
+input.catnm5 {
+	color: #0054a5; /* синий */
+	font-size: 8pt;
+}
+input.catnmb {
+	font-weight: bold;
+}
+input.catnm:hover, input.catnm2:hover, input.catnm3:hover, input.catnm4:hover, input.catnm5:hover, input.catnm6:hover, input.catnm7:hover, input.catnmb:hover
+{
+	text-decoration: underline;
+}
+input.catplus {
+	font-size: 9pt;
+	background-color: inherit;
+	cursor: pointer;
+	padding:  0;
+	margin: 0;
+	color: #444;
+	border-width: 1px;
+	border-color: #dcdcdc ;
+}
+input.catplus:hover
+{
+	/*font-sizex: 10pt;*/
+	background-color: #444;
+	color: white;
+}
+
+
+/* =========== Облако тэгов ============= */
+
+/* =========== Кнопки в виде ссылок =========== */
+input.cloudbutton, input.cloudbuttonb, input.cloudbuttont, input.lnk2, input.aslink, input.aslink11, input.aslink9 {
+	font-size: 9pt;
+	border-width: 0;
+	background-color: inherit;
+	color: #0171bb; /* синий */
+	cursor: pointer;
+	padding:  0;
+	margin: 0;
+}
+
+input.cloudbuttonb {
+	font-weight: bold;
+}
+
+input.cloudbuttont {
+	font-size: 8pt;
+}
+input.aslink9 {
+	font-size: 9pt;
+}
+input.lnk2, input.aslink11 {
+	font-size: 11pt;
+}
+input.aslink11:hover, input.aslink9:hover {
+	text-decoration: underline;
+}
+
+input.cloudbutton:hover, input.cloudbuttonb:hover, input.cloudbuttont:hover, input.lnk2:hover, input.aslink:hover {
+	text-decoration: underline;
+}
+input.cloudbuttont:hover {
+	color: #0054a5;
+}
+
+/* =========== Кнопочки ============= */
+.bred, .bdel {
+	font-size: smaller;
+	cursor: pointer;
+
+	border: none;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.bdel {
+	background-image: url('../img/txt-del.png');
+}
+.bred {
+	background-image: url('../img/txt-edit.png');
+}
+
+
+/* ================================== Ссылки ============================= */
+
+a {
+	color: #0171bb; /* синий */
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color: #8a2be2; /* синий */
+}
+
+a.tdnone:hover {
+	text-decoration: none;
+}
+
+/* =========== Ссылки в формате кнопок ============= */
+a.btn, a.btn11, a.btnm {
+	/*text-decorationx: none;*/
+}
+a.btnm {
+	/*text-decorationx: none;*/
+	background-color: #ddd;
+}
+
+a.btn:visited, a.btn11:visited, a.btnm:visited {
+	color: #0171bb; /* синий, не меняется цвет */
+}
+a.btn:hover, a.btn11:hover {
+
+}
+a.btnm:hover { /* Там работает ховер от параграфа */
+	background-color: #0171bb; /* синий */
+	text-decoration: none;
+}
+
+a.btn {
+	font-size: 9pt;
+}
+a.btn11 {
+	font-size: 11pt;
+}
+/* =========== Ссылка-картинка ============= */
+a.pict
+{
+	text-decoration: none;
+}
+a.pict:hover
+{
+	text-decoration: none;
+}
+
+
+DIV.buttons {
+	float: right;
+	overflow: hidden;
+
+	margin: 0px 1% 0px 1%;
+}
+DIV.buttons2 {
+	float: right;
+	overflow: hidden;
+
+	margin: 19px 5px 0 0;
+}
+DIV.alignleft {
+	float: left;
+}
+DIV.alignright {
+	float: right;
+}
+
+
+/* =========== Цвета сообщений ============= */
+.err { color: red; }
+.oke { color: green; }
+.mes { color: #707; }
+
+span.pink {
+	color: #ee008c;
+}
+span.red {
+	color: red;
+}span.green {
+	 color: green;
+ }

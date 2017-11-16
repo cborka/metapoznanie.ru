@@ -1,0 +1,16 @@
+AddType application/x-httpd-php .html .htm
+           DirectoryIndex mpcms/index.php
+
+           ErrorDocument 404 /notfound.php
+
+           #Redirect /php/mpstat5.php /cborka
+
+           <IfModule mod_rewrite.c>
+             RewriteEngine On
+             RewriteBase /
+
+             RewriteCond %{REQUEST_FILENAME} !-f
+             RewriteCond %{REQUEST_FILENAME} !-d
+             RewriteRule ^(.*)$ /mpcms/blog-index2.php?/$1 [QSA,L]
+
+           </IfModule>
