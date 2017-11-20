@@ -2,6 +2,8 @@
 <!--// ЛОГОТИП -->
 <div class="logo">
 <?php
+session_start(); // Записывает куки, а запись куков должна быть до того как что-то ещё выводить будем
+
 if ($_SERVER['REQUEST_URI'] <> '/')
 {
 echo '<a title="На главную" href="/"><img src="/img/mp21.bmp" alt="" /></a>';

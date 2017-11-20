@@ -12,11 +12,13 @@
 <br/>
 <a class="btn" href="http://cborka.clan.su/" target="_blank" title="Мои тексты на юкозе">Мой предыдущий сайт</a>
 <br/>
-<a class="btn" href="/inf-gosha/" title="Гоша">Мой инф (бот) Гоша</a>
+<a class="btn" href="/inf-gosha" title="Гоша">Мой инф (бот) Гоша</a>
 <br/>
 <br/>
 <a class="btn" href="http://cborka777.wix.com/cborka" target="_blank" title="Это моя проба в WIX">Я на WIX</a>
 <br/>
+ <a href="/test/sess.php" title="Сессии">Тест работы сессий</a><br/>
+
 
 </div>
 

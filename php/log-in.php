@@ -3,7 +3,6 @@
 require_once "../php/init_php.php";
 require_once "../php/init_db.php";
 
-
 //echo "Abs:".$_SERVER['DOCUMENT_ROOT'].".<br/>";
 //exit;
 
@@ -41,7 +40,7 @@ function nik($nick)
 	}
 }
 
-	session_start();
+//	session_start(); // Должна быть до того как что-то ещё выводится, поэтому перенёс в itis-header.php
 	
 if (isset($_POST['ss_nick']))  // Отправлено из формы, заходим на сайт
 {
