@@ -1,6 +1,4 @@
-не найдено
 <?php
-
 
 require "php/init_php.php";
 
@@ -11,7 +9,7 @@ global $url;
 //echo "notfound: Страничка ".$url." не найдена!<br/>";
 
 
-echo "notfound: Страница " . $_GET['page'] . " не найдена!<br/><br/>";
+echo "notfound: Страница <b>" . $_GET['page'] . "</b> не найдена!<br/><br/>";
 //echo "notfound: Страница ".$url." не найдена!<br/><br/>";
 
 echo '<a href="/Tексты">[ В каталог ]</a><br>';

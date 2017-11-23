@@ -161,7 +161,7 @@ function get_last_stat()
 	return $ret;
 }
 
-echo '<a href="../index.php">[ На главную ]</a><br><br/>';
+echo '<a href="/">[ На главную ]</a><br><br/>';
 
 echo get_last_stat();
 

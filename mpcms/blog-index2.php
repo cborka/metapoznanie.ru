@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-
 <?php
 require_once "../php/init_php.php";
 require_once "../php/init_db.php";
- 
+
 // точка входа index.php
 $url = trim($_SERVER['REQUEST_URI'], "/");
 //$url_array = explode("/", $url);
@@ -15,14 +13,23 @@ if ($url_name == "index.php")
 {
 	header("Location: /mpcms/index.php");
 	exit;
-} 
+}
+
+if ($url_name == "newsitemap.xml")
+{
+    header("Location: /php/create_sitemap.php");
+
+    exit;
+}
 
 $is_txt = TRUE;
 
 function page_not_found()
 {
 	global $url;
-	
+
+//	echo "page_not_found()";
+
 //	header("HTTP/1.0 404 Not Found");
 
 //	header("Location: /".urldecode($url));
@@ -98,8 +105,8 @@ $js1 = "
 
 get_txt();
 
-?> 
-
+?>
+<!DOCTYPE html>
 <html>
 <head>
 	<title><?php echo $header; ?></title>
@@ -159,7 +166,7 @@ get_txt();
 
 <?php	if (($ss_nick == 'Admin') or ($ss_nick == 'cbw')) { ?>
 <div class="buttons2">		
-<a href="/mpcms/blog-editor.php" alt="Добавить новый текст" title="Добавить новый текст"><img src="/img/txt-new.png" alt="" /></a>
+<a href="/mpcms/blog-editor.php" title="Добавить новый текст"><img src="/img/txt-new.png" alt="" /></a>
 </div>
 <?php }  ?>
 

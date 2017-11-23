@@ -14,10 +14,11 @@
 <br/>
 <a class="btn" href="/inf-gosha" title="Гоша">Мой инф (бот) Гоша</a>
 <br/>
+<a href="/php/mpstat1.php" title="Вывод статистики">Статистика</a><br/>
 <br/>
 <a class="btn" href="http://cborka777.wix.com/cborka" target="_blank" title="Это моя проба в WIX">Я на WIX</a>
 <br/>
- <a href="/test/sess.php" title="Сессии">Тест работы сессий</a><br/>
+<!-- <a href="/test/sess.php" title="Сессии">Тест работы сессий</a><br/>-->
 
 
 </div>

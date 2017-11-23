@@ -4,9 +4,8 @@
 
 	$squery_count =0;
 	$tstart = microtime(true);
-?>
 
-<?php 
+// TODO Скрыть данные ввода и не сохранять их в ГИТ
 define("DBName","vh181957_cborka_mp1");
 define("HostName","localhost");
 define("UserName","vh181957_cborka");
@@ -24,7 +23,6 @@ if(!mysql_select_db("vh181957_cborka_mp1")) {
 
 // mysql_query('SET names "cp1251"');
 mysql_query('SET names "utf8"');
-
 
 
 function mysql_query_s($sql)
@@ -87,5 +85,4 @@ function do_sql_a($sql)
 	
 }
 
- 
 ?>
