@@ -26,10 +26,13 @@ function format1($text_id, $dt, $url)
 		<td>'.$url. '</td>
 		</tr> ';
 }
+// function format1
+
 
 $sql = "SELECT text_id, dt, url 
-			FROM mp_texts 
-		WHERE cat_rf NOT IN (10, 15)
+			FROM mp_text_status
+			  LEFT JOIN mp_texts ON text_rf = text_id 
+		WHERE status_rf = 14
 		ORDER BY 1 DESC"
 ;
 echo $sql;

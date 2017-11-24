@@ -64,19 +64,22 @@ function html2bb2($txt)
 //
 function get_blog_txt_for_edit() 
 {
-    global $n, $tid, $man_id, $nik, $dt, $cat_name, $header, $url, $tags, $about, $txt, $stbb;
+    global $n, $tid, $man_id, $nik, $dt, $cat_name, $header, $url, $tags, $description, $about, $txt, $stbb, $tositemap;
 
 	$tid = $_POST['tid'];
 
 	$stbb = do_sql("SELECT count(*) FROM mp_text_status WHERE text_rf = ".$tid." AND status_rf = 13");
-	
-	if ($stbb == '0') $stbb = "checked"; 
+	if ($stbb == '0') $stbb = "checked";
 	else $stbb = "";
-	
+
+    $tositemap = do_sql("SELECT count(*) FROM mp_text_status WHERE text_rf = ".$tid." AND status_rf = 14");
+    if ($tositemap != '0') $tositemap = "checked";
+    else $tositemap = "";
+
 	if ($tid == '') $tid = '0';
 	
 	$sql = "
-		SELECT b.text_id, b.user_rf, m.logname, b.dt, c.cat_name, b.header, b.url, b.tags, b.about, b.content AS txt 
+		SELECT b.text_id, b.user_rf, m.logname, b.dt, c.cat_name, b.header, b.url, b.tags, b.description, b.about, b.content AS txt 
 			FROM (( mp_texts b
 				LEFT JOIN mp_cats c ON c.cat_id = b.cat_rf)
 				LEFT JOIN mp_users m ON m.user_id = b.user_rf)
@@ -98,6 +101,7 @@ function get_blog_txt_for_edit()
 		$header = 'Заголовок';
 		$url = 'zagolovok';
 		$tags = '';
+        $description = '';
 		$about = '';
 		$txt = '';
 		
@@ -114,6 +118,7 @@ function get_blog_txt_for_edit()
 		$header = $f[header];
 		$url = $f[url];
 		$tags = $f[tags];
+        $description = $f[description];
 
 		if ($stbb == 'checked')
 		{
@@ -259,7 +264,15 @@ get_blog_txt_for_edit();
 <textarea class="ed" id="txt2" name="txt2" maxlength="2048" placeholder="Кратко">
 <?php echo $about; ?>
 </textarea>
+    <br/>
+    <br/>
 
+<!--TODO где же прячется этот ед? class="ed"    -->
+    <h3>Краткое описание</h3>
+
+            <textarea class="ed" id="txt3" name="txt3" maxlength="250" placeholder="Description">
+<?php echo $description; ?>
+</textarea>
 
 
 </div>
@@ -296,10 +309,11 @@ get_blog_txt_for_edit();
 		
 		var t = document.getElementById("txt").value;
 		var t2 = document.getElementById("txt2").value;
-//		t = t.replace(/\n/g, '<br />'); 
+        var t3 = document.getElementById("txt3").value;
+//		t = t.replace(/\n/g, '<br />');
 
-		ero(""); 
-	
+		ero("");
+
 		Tid = document.getElementById("tid").value;
 		if (Tid == 0)
 		{
@@ -312,12 +326,19 @@ get_blog_txt_for_edit();
 			wdt = document.getElementById("dt").value;
 		}
 
+		// Заменять ли бб-коды при записи
 		if (document.getElementById("ck_bb").checked == true)
 			bb = "BBYes";
 		else	
 			bb = "BBNo";
 
-		var params = 
+        // Помещать ли текст в карту сайта
+        if (document.getElementById("ck_tositemap").checked == true)
+            sm = "1";
+        else
+            sm = "0";
+
+        var params =
 			'header=' + encodeURIComponent(document.getElementById("header").value)+
 			'&dt=' + encodeURIComponent(wdt)+
 			'&user=' + encodeURIComponent(document.getElementById("user").value)+
@@ -325,15 +346,17 @@ get_blog_txt_for_edit();
 			'&category=' + encodeURIComponent(document.getElementById("category").value)+
 			'&url=' + encodeURIComponent(document.getElementById("url").value)+
 			'&tags=' + encodeURIComponent(document.getElementById("tags").value)+
+            '&description=' + encodeURIComponent(t3)+
 			'&tid=' + encodeURIComponent(Tid)+
 			'&bb=' + encodeURIComponent(bb)+
+            '&sm=' + encodeURIComponent(sm)+
 			'&passwd=' + encodeURIComponent(document.getElementById("passwd").value)+
 			'&nik=' + encodeURIComponent(nik)+
 			'&about=' + encodeURIComponent(t2)+
 			'&content=' + encodeURIComponent(t)
 		;
-		 
-		doquery ("/php/do-blog-editor.php", params, deftimeout);
+
+        doquery ("/php/do-blog-editor.php", params, deftimeout);
 		
 		return false;
     }
@@ -444,8 +467,19 @@ get_blog_txt_for_edit();
 // 	setTimeout('getCats()', 1000); 
 </script>
 
-<div class="divtxt">
+
+
+
+
+
+    <div class="divtxt">
 	<table class="ed"> 	<col width="15%">
+        <tr><td class="l"> ... </td>
+        <td class="r">
+            <input id="ck_tositemap" class="btn" type='checkbox' value='В карту?' title='Помещать в карту сайта?' <?php echo $tositemap; ?> />
+            Поместить текст в карту сайта
+        </td></tr>
+
 		<tr><td class="l">Тэги</td>
     	<td class="r"><input class='text' type='text' name='tags' id='tags' value='<?php echo $tags; ?>' maxlength='250' title='Ключевые слова'/></td></tr>
 	    

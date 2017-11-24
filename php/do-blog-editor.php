@@ -90,6 +90,7 @@ function write_txt()
 	$p_cat = mysql_escape_string(input_filter($_POST['category']));
 	$p_url = input_filter($_POST['url']);
 	$p_tags = input_filter($_POST['tags']);
+    $p_description = input_filter($_POST['description']);
 	$p_dt = input_filter($_POST['dt']);
 	$p_header = input_filter($_POST['header']);
 	
@@ -116,7 +117,7 @@ function write_txt()
 
 	// Записываю
 	$sql = "
-		INSERT INTO mp_texts (text_id, user_rf, dt, dtm, cat_rf, header, url, tags, about, content)  
+		INSERT INTO mp_texts (text_id, user_rf, dt, dtm, cat_rf, header, url, tags, description, about, content)  
 			VALUES (0, ".$ss_man_id.",\""
 			.$p_dt."\", \""
 			.$p_dt."\", "
@@ -124,6 +125,7 @@ function write_txt()
 			.$p_header."\", \""
 			.$p_url."\", \""
 			.$p_tags."\", \""
+            .$p_description."\", \""
 			.$p_about."\", \""
 			.$p_content."\")";
 
@@ -137,12 +139,13 @@ function write_txt()
 /*
 */
 	oke("ТЕКСТ ЗАПИСАН <a href=\"/".$p_url."\">Перейти</a>");
-//	echo ",".$text_id;
+	echo "еуче_шв = ".$text_id;
 
 	// Записывают ТЭГИ
 	if ($p_tags != "")  
 		write_tags($text_id, $p_tags);
 
+// TODO при добавлении новой записи надо записывать тэги (они кажись не пишутся) и инфу о замене бб-кодов и sitemap
 	// Не заменять ББ тэги
 //	if ($p_bb == 'BBYes')
 //		unset_text_status($tid, 13); // Заменять
@@ -156,7 +159,7 @@ function write_txt()
 function update_txt($tid)
 {
 	global $ss_nick, $ss_man_id;
-	
+
 	if (($ss_nick != 'Admin') and ($ss_nick != $_POST['user']))
 	{
 		ero('update_txt: Не имеете права.');
@@ -179,6 +182,7 @@ function update_txt($tid)
 	$p_cat = mysql_escape_string(input_filter($_POST['category']));
 	$p_url = input_filter($_POST['url']);
 	$p_tags = input_filter($_POST['tags']);
+    $p_description = input_filter($_POST['description']);
 //	$p_dt = input_filter($_POST['dt']);
 	$p_header = input_filter($_POST['header']);
 
@@ -199,6 +203,7 @@ function update_txt($tid)
 			header = \"".$p_header."\", 
 			url = \"".$p_url."\",
 			tags = \"".$p_tags."\",
+			description = \"".$p_description."\",
 			about = \"".$p_about."\",
 			content = \"".$p_content."\"
 		WHERE
@@ -219,9 +224,16 @@ function update_txt($tid)
 	
 	// Не заменять ББ тэги
 	if ($p_bb == 'BBYes')
-		unset_text_status($tid, 13); // Заменять
+		unset_text_status($tid, 13);    // Заменять
 	else
 		set_text_status($tid, 13); 	 // Как есть
+
+    // Помещать ли текст в карту сайта
+    $p_sm = input_filter($_POST['sm']);
+    if ($p_sm == '0')
+        unset_text_status($tid, 14);   // Не помещать
+    else
+        set_text_status($tid, 14);	    // Помещать
 
 }
 

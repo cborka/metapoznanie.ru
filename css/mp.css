@@ -465,10 +465,10 @@ td.l9 {
 }
 
 /* ================= Область редактирования текста =================== */
-textarea, input, iframe {
+/*textarea, input, iframe {*/
 	/*font-familyx: Arial, Tahoma, Verdana, Georgia, 'Times New Roman', Times, serif;*/
 	/*font-sizex: 11pt;*/
-}
+/*}*/
 
 input, select {
 	border: 1px solid;
@@ -542,13 +542,13 @@ select {
 iframe.ed {
 	margin: 0;
 	/*widthx: 95%;*/
-	height: 150px;
+	height: 100px;
 
-	border: 1px solid;
-	border-color: #ccc;
+	border: 5px solid;
+	border-color: #8a2be2aa;
 }
 
-textarea.ed {
+textarea.ed1, textarea.ed2 {
 	margin: 0;
 	width: 99%;
 	height: 150px;
@@ -556,6 +556,7 @@ textarea.ed {
 	border: 1px solid;
 	border-color: #ccc;
 }
+
 .show-txt {
 	border: 1px solid #ccc;
 	margin: 0;
