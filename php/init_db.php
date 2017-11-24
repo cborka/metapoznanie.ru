@@ -13,12 +13,11 @@ define("UserName","...");
 define("Password","...");
 
 if (!mysql_connect(HostName,UserName,Password)) {
-//if (!mysql_connect("localhost","vh181957_cborka","123123123","vh181957_cborka_mp1")) {
  echo "<br>Ошибка подключения к серверу MySQL";
  exit;
 }
 
-if(!mysql_select_db("vh181957_cborka_mp1")) {
+if(!mysql_select_db(DBname)) {
     echo 'Ошибка: ' . mysql_error() . "n<br>";
 }
 
