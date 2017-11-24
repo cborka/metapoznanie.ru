@@ -6,10 +6,11 @@
 	$tstart = microtime(true);
 
 // TODO Скрыть данные ввода и не сохранять их в ГИТ
-define("DBName","vh181957_cborka_mp1");
+
+define("DBName","...");
 define("HostName","localhost");
-define("UserName","vh181957_cborka");
-define("Password","123123123");
+define("UserName","...");
+define("Password","...");
 
 if (!mysql_connect(HostName,UserName,Password)) {
 //if (!mysql_connect("localhost","vh181957_cborka","123123123","vh181957_cborka_mp1")) {
