@@ -1,5 +1,5 @@
 
-<!-- Это часть страницы blog-index.php  -->
+<!-- Это часть страницы blog-index2.php  -->
 
 
 <div class="divtxt">

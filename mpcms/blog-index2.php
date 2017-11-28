@@ -100,12 +100,12 @@ get_txt();
 	<title><?php echo $header; ?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="/css/mp.css">
+	<link rel="stylesheet" href="/css/mp.css?<?php echo $ver; ?>">
 	<style>	</style>
 	<?php echo $js1; ?>
 
-	<script type="text/javascript" language="javascript" src="../js/a-lib.js"></script>
-	<script type="text/javascript" language="javascript" src="/js/blog-dir.js"></script>
+	<script type="text/javascript" language="javascript" src="../js/a-lib.js?<?php echo $ver; ?>"></script>
+	<script type="text/javascript" language="javascript" src="/js/blog-dir.js?<?php echo $ver; ?>"></script>
 
 	
 </head>

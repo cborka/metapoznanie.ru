@@ -1,11 +1,15 @@
+<?php
+require_once "../php/init_php.php";
+require_once "../php/init_db.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Категории</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
-	<link rel="stylesheet" href="../css/mp.css">
+	<link rel="stylesheet" href="../css/mp.css?<?php echo $ver; ?>">
 
-	<script type="text/javascript" language="javascript" src="/js/a-lib.js"></script>
+	<script type="text/javascript" language="javascript" src="/js/a-lib.js?<?php echo $ver; ?>"></script>
 </head>
 <body>
 

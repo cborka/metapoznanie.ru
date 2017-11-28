@@ -8,6 +8,8 @@ header('Content-Type: text/html; charset=UTF8');
 //setlocale(LC_ALL, 'ru_RU.CP1251', 'rus_RUS.CP1251', 'Russian_Russia.1251');
 setlocale(LC_ALL, 'ru_RU.UTF-8', 'Russian_Russia.65001');
 
+global $ver;
+$ver = "ver=5";
 
 function ero($msg)
 {

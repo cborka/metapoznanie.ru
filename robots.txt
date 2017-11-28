@@ -1,7 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /cat/
+Disallow: /test/
 Sitemap: http://metapoznanie.ru/sitemap.xml
 
 User-agent: Yandex
 Allow: /
+Disallow: /cat/
+Disallow: /test/
 Host: metapoznanie.ru

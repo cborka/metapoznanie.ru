@@ -7,7 +7,9 @@
 <a href="http://cborka.clan.su/" target="_blank">[ Мой предыдущий сайт ]</a><br/>
 <div class="i">
 <p class="pleft"> 
-		
+
+<!--TODO Наверное надо убрать этот файл  вообще, ведь архива не будет  -->
+
 <b>История сайта</b><br/>
 Первый кирпич<a name="firstone" href="archive/index1.html"> [|=01=|]</a>    
 заложен <b>24.04.2014</b><br> 

@@ -1,10 +1,14 @@
+<?php
+require_once "../php/init_php.php";
+require_once "../php/init_db.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Метапознание</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="/css/mp.css">
+	<link rel="stylesheet" href="/css/mp.css?<?php echo $ver; ?>">
 	<style>	</style>
 
 	<script  type="text/javascript">
@@ -15,8 +19,8 @@
 
 	</script>
 	
-	<script type="text/javascript" src="/js/a-lib.js"></script>
-	<script type="text/javascript" src="/js/blog-dir.js"></script>
+	<script type="text/javascript" src="/js/a-lib.js?<?php echo $ver; ?>"></script>
+	<script type="text/javascript" src="/js/blog-dir.js?<?php echo $ver; ?>"></script>
 
 </head>
 <body>

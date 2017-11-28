@@ -169,7 +169,7 @@ function format2($text_id, $nik, $dt, $cat_name, $header, $url, $txt)
 			
 	$hd = '	<div  class="hdtxt">'
 			.$text_id.' | '.f46($nik, "Автор").' | '.f46($dt, "Дата").' | 
-			 <a href="/'.$cat_name.'" title="Категория">'.$cat_name.'</a> | '
+			 <a href="/cat/'.$cat_name.'" title="Категория">'.$cat_name.'</a> | '
 			 .$ft.$btn.			
 			'</div>';
 
@@ -235,8 +235,8 @@ function like_txt($txt_id, $lk)
 		ero($res);
 		return "0";
 	}
+
 	// Записываю
-	
 	if ($lk != 0)
 	{
 		$sql = "INSERT INTO mp_text_likes (user_rf, text_rf, danet)  VALUES (".	$ss_uid.",".$txt_id.",".$lk.")";
@@ -715,7 +715,7 @@ function formatcat1($cat_name, $shft)
 	$cat = input_filter($_POST['cat']);
 	
 	if ($cat == $cat_name or $shft == 'xxx')
-	return	'<input type="button" class="cloudbuttonb" value=" '.$cat_name.'" onclick="change_cats(\''.$cat_name.'\')" />';
+		return	'<input type="button" class="cloudbuttonb" value=" '.$cat_name.'" onclick="change_cats(\''.$cat_name.'\')" />';
 	else
 		return	'<input type="button" class="cloudbutton" value=" '.$cat_name.'" onclick="change_cats(\''.$cat_name.'\')" />';
 

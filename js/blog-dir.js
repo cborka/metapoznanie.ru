@@ -27,6 +27,8 @@
 	function getIds() 
 	{ 
 //		alert("--"+xmlhttp.responseText);
+//        idss = "1,2,3";
+
 		idss = xmlhttp.responseText;
 		ids = idss.split(",");
 //		ids = xmlhttp.responseText.split(",");
@@ -372,7 +374,7 @@
 	function cats_chain()
 	{ 
 		document.getElementById("cats_chain").innerHTML = xmlhttp.responseText;
-	};
+	}
   	function get_cats_chain() 
 	{
 		onOK=cats_chain; 
@@ -392,7 +394,7 @@
 //		alert(txt_id+'!')
 		var params = 
 			'&mode=' + encodeURIComponent("get_cats_chain_for_txt")+
-			'&txt_id=' + encodeURIComponent(txt_id);
+			'&txt_id=' + encodeURIComponent(txt_id)
 		;
 				 
 		q_is_async = false; 
@@ -407,7 +409,7 @@
 		onOK=catsAbout; 
 		var params = 
 			'&mode=' + encodeURIComponent("get_cats_about")+
-			'&txt_id=' + encodeURIComponent(txt_id);
+			'&txt_id=' + encodeURIComponent(txt_id)
 		;
 			 
 		q_is_async = false; 
@@ -419,7 +421,7 @@
 	//
 	function change_tags(tag_name)
 	{
-//		alert(tag_name+'!')
+		alert(tag_name+'!')
 		document.getElementById("tag").value = tag_name;
 		refresh_dir();
 	}
@@ -438,8 +440,8 @@
   	//
   	function refresh_dir() 
 	{
-		document.location.href = 
-			"/"+document.getElementById("cat").value+
+ 		document.location.href =
+			"/cat/"+document.getElementById("cat").value+
 			"?"+document.getElementById("tag").value;
 		return;
 	}
@@ -450,7 +452,7 @@
 	function tagsCloudShow()
 	{ 
 		document.getElementById("tagcloud").innerHTML = xmlhttp.responseText;
-	};
+	}
 	function show_tags1() 
 	{
 		ero("");
@@ -475,7 +477,7 @@
 	function catsCloudShow()
 	{ 
 		document.getElementById("catcloud").innerHTML = xmlhttp.responseText;
-	};
+	}
 	function show_cats1() 
 	{
 		ero("");
@@ -498,7 +500,7 @@
 	function subcatsShow()
 	{ 
 		document.getElementById("cat"+gCatId).innerHTML = xmlhttp.responseText;
-	};
+	}
 	function show_subcats(cat_id, shft) 
 	{
 		ero("");
@@ -568,8 +570,8 @@
 		document.getElementById("srtt").value = 'Новые'; SetSrtt();
 //		document.getElementById("srtk").value = 'СКомментариями'; SetSrtk();
 		
-		refresh_dir()
-	};
+		refresh_dir();
+	}
 	
     //
 	// ОЦЕНИТЬ ТЕКСТ
@@ -577,7 +579,7 @@
 	function lktUpd()
 	{ 
 		document.getElementById("like"+gTxtId).innerHTML = xmlhttp.responseText;
-	};
+	}
    	function lkt(tid, lk) 
 	{
 		onOK=lktUpd; 
@@ -586,7 +588,7 @@
 		var params = 
 			'&mode=' + encodeURIComponent("like_txt")+
 			'&like=' + encodeURIComponent(lk)+
-			'&txt_id=' + encodeURIComponent(tid);
+			'&txt_id=' + encodeURIComponent(tid)
 		;
 				 
 		q_is_async = false; 
@@ -598,7 +600,7 @@
 	function lkcUpd()
 	{ 
 		document.getElementById("likec"+gTxtId).innerHTML = xmlhttp.responseText;
-	};
+	}
    	function lkc(tid, lk) 
 	{
 		onOK=lkcUpd; 
@@ -607,7 +609,7 @@
 		var params = 
 			'&mode=' + encodeURIComponent("like_comm")+
 			'&like=' + encodeURIComponent(lk)+
-			'&txt_id=' + encodeURIComponent(tid);
+			'&txt_id=' + encodeURIComponent(tid)
 		;
 				 
 		q_is_async = false; 
