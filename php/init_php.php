@@ -9,8 +9,6 @@ header('Content-Type: text/html; charset=UTF8');
 setlocale(LC_ALL, 'ru_RU.UTF-8', 'Russian_Russia.65001');
 
 
-// echo 'Привет от PHP<br>';
-
 function ero($msg)
 {
     echo "<span class='err'>" . $msg . "</span>";

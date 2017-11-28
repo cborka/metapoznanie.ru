@@ -1,31 +1,14 @@
 <?php
+header("HTTP/1.0 404 Not Found"); // Должен быть первым
 
 require "php/init_php.php";
 
-global $url;
-
-
-//$url = trim($_SERVER['REQUEST_URI'], "/");    // например, /contact
-//echo "notfound: Страничка ".$url." не найдена!<br/>";
-
 
 echo "notfound: Страница <b>" . $_GET['page'] . "</b> не найдена!<br/><br/>";
-//echo "notfound: Страница ".$url." не найдена!<br/><br/>";
 
-echo '<a href="/Tексты">[ В каталог ]</a><br>';
-echo '<a href="/">[ На главную ]</a><br>';
+echo '<a href="/Tексты">[ В каталог текстов ]</a><br>';
+echo '<a href="/">[ На главную страницу ]</a><br>';
 
-header("HTTP/1.0 404 Not Found");
+// var_dump(http_response_code());
 
-
-/*
-if(file_exists("includes/modules/{$url}.php")){
-    include "includes/modules/{$url}.php";    //модуль
-}else if($uri == ''){
-    include "include/modules/index.php";    // главная страница
-}else{
-    header("HTTP/1.0 404 Not Found");    // такого модуля нет
-    die("Bad request!");
-}
-*/
 ?>

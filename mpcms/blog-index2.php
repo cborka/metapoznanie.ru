@@ -15,24 +15,12 @@ if ($url_name == "index.php")
 	exit;
 }
 
-if ($url_name == "newsitemap.xml")
-{
-    header("Location: /php/create_sitemap.php");
-
-    exit;
-}
-
 $is_txt = TRUE;
 
 function page_not_found()
 {
 	global $url;
 
-//	echo "page_not_found()";
-
-//	header("HTTP/1.0 404 Not Found");
-
-//	header("Location: /".urldecode($url));
 	header("Location: /notfound.php?page=".urldecode($url));
 	exit;	
 }
