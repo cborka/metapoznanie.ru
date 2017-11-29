@@ -548,13 +548,16 @@ iframe.ed {
 	border-color: #8a2be2aa;
 }
 
-textarea.ed1, textarea.ed2 {
+textarea.ed, textarea.ed2 {
 	margin: 0;
 	width: 99%;
 	height: 150px;
 
 	border: 1px solid;
 	border-color: #ccc;
+}
+textarea.ed2 {
+	height: 50px;
 }
 
 .show-txt {

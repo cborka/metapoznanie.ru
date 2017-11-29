@@ -421,7 +421,6 @@
 	//
 	function change_tags(tag_name)
 	{
-		alert(tag_name+'!')
 		document.getElementById("tag").value = tag_name;
 		refresh_dir();
 	}

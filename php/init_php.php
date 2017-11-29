@@ -1,6 +1,9 @@
 <?php
 // Инициализация PHP
 
+// TODO перетащить тексты из сайта который на ВордПрессе, оттуда убрать наверное, а то они все равно уже проиндексированы в гугле
+// TODO Правую панель закрыть от индексирования как-нибудь, например, отображая ее в фрейме и закрыв отображаемую страницу
+
 //header('Content-Type: text/html; charset=windows-1251');
 header('Content-Type: text/html; charset=UTF8');
 
@@ -9,7 +12,7 @@ header('Content-Type: text/html; charset=UTF8');
 setlocale(LC_ALL, 'ru_RU.UTF-8', 'Russian_Russia.65001');
 
 global $ver;
-$ver = "ver=5";
+$ver = "ver=5"; // Тут нужно вручную обновлять номера версий после исправлений в скриптах .js и .css
 
 function ero($msg)
 {

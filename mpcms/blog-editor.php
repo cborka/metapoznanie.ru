@@ -272,10 +272,8 @@ get_blog_txt_for_edit();
     <br/>
     <br/>
 
-<!--TODO где же прячется этот ед? class="ed"    -->
-    <h3>Краткое описание</h3>
-
-            <textarea class="ed" id="txt3" name="txt3" maxlength="250" placeholder="Description">
+<h3>Краткое описание</h3>
+ <textarea class="ed2" id="txt3" name="txt3" maxlength="250" placeholder="Description">
 <?php echo $description; ?>
 </textarea>
 
@@ -489,7 +487,7 @@ get_blog_txt_for_edit();
     	<td class="r"><input class='text' type='text' name='tags' id='tags' value='<?php echo $tags; ?>' maxlength='250' title='Ключевые слова'/></td></tr>
 	    
 	    <tr><td class="l">Адрес</td>
-    	<td class="r"><input class='text ro' type='text' name='url' id='url' value='<?php echo $url; ?>' title='URL' readonly /></td></tr> 
+    	<td class="r"><input class='text ro' type='text' name='url' id='url' value='<?php echo $url; ?>' title='URL' /></td></tr>
     	
     	<tr><td class="l">Автор</td>
     	<td class="r">

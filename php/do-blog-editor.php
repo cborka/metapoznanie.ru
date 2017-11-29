@@ -139,18 +139,35 @@ function write_txt()
 /*
 */
 	oke("ТЕКСТ ЗАПИСАН <a href=\"/".$p_url."\">Перейти</a>");
-	echo "еуче_шв = ".$text_id;
+    ero("еуче_шв = ".$text_id);
 
-	// Записывают ТЭГИ
-	if ($p_tags != "")  
-		write_tags($text_id, $p_tags);
+    // Ищу ид вновь записанного текста
+    $t_id = do_sql("
+		SELECT text_id FROM mp_texts WHERE url = \"".$p_url."\"
+	");
+    if (substr($t_id, 0, 5) == "Error")
+    {
+        ero("ид вновь записанного текста не найден - ".$t_id);
+        return "0";
+    }
 
-// TODO при добавлении новой записи надо записывать тэги (они кажись не пишутся) и инфу о замене бб-кодов и sitemap
+    // Записывают ТЭГИ
+    if ($p_tags != "")
+        write_tags($t_id, $p_tags);
+
 	// Не заменять ББ тэги
-//	if ($p_bb == 'BBYes')
-//		unset_text_status($tid, 13); // Заменять
-//	else
-//		set_text_status($tid, 13); 	 // Как есть
+	if ($p_bb == 'BBYes')
+		unset_text_status($t_id, 13);   // Заменять
+	else
+		set_text_status($t_id, 13);     // Как есть
+
+    // Помещать ли текст в карту сайта
+    $p_sm = input_filter($_POST['sm']);
+    if ($p_sm == '0')
+        unset_text_status($t_id, 14);   // Не помещать
+    else
+        set_text_status($t_id, 14);	 // Помещать
+
 }
 
 //
