@@ -524,7 +524,7 @@ get_blog_txt_for_edit();
 
 <div class="rightcol"> <!-- ПРАВАЯ КОЛОНКА -->
 
-<?php include "../mpcms/itis-right.php" ?>
+<?php include "../mpcms/itis-right-text.php" ?>
 
 </div> <!-- ПРАВАЯ КОЛОНКА -->
 </div> <!-- WRAPPER -->

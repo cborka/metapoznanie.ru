@@ -12,11 +12,8 @@
 <br/>
 <a class="btn" href="/inf-gosha" title="Гоша">Мой инф (бот) Гоша</a>
 <br/>
-<a href="/php/mpstat1.php" title="Вывод статистики">Статистика</a><br/>
-<br/>
 <a class="btn" href="http://cborka777.wix.com/cborka" target="_blank" title="Это моя проба в WIX">Я на WIX</a>
 <br/>
-<!-- <a href="/test/sess.php" title="Сессии">Тест работы сессий</a><br/>-->
 
 
 <?php
@@ -27,8 +24,8 @@ if (isset($_SESSION['ss_nick']) )
 <br/>
 <span class="red">Админка<br/></span>
 <a class="btn" href="/php/create_sitemap.php" title="Пересоздание карты сайта">Карта сайта</a><br/>
-<br/>
-
+<a href="/php/mpstat1.php" title="Вывод статистики">Статистика</a><br/>
+<!-- <a href="/test/sess.php" title="Сессии">Тест работы сессий</a><br/>-->
 <?php
     }
 ?>

@@ -175,7 +175,16 @@ else
 
 <div class="rightcol"> <!-- ПРАВАЯ КОЛОНКА -->
 
-<?php include "../mpcms/itis-right.php" ?>
+<?php
+if ($is_txt)  // ТЕКСТ
+{
+    include "../mpcms/itis-right-text.php";
+}
+else
+{
+    include "../mpcms/itis-right-blog.php";
+}
+?>
 
 </div> <!-- ПРАВАЯ КОЛОНКА -->
 

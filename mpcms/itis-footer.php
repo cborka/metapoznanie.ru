@@ -47,7 +47,7 @@ echo '<br/>SQL запросов: '.$squery_count.'+';
 
 </div>
 
-<!-- TODO Разобраться с информерами -->
+<!-- ИНФОРМЕРЫ -->
 
 <!-- Yandex.Metrika informer -->
 <a href="https://metrika.yandex.ru/stat/?id=43836374&amp;from=informer"
@@ -109,5 +109,40 @@ echo '<br/>SQL запросов: '.$squery_count.'+';
 </script>
 <!--/LiveInternet-->
 
+<!-- Rating@Mail.ru counter -->
+<script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({id: "2945281", type: "pageView", start: (new Date()).getTime()});
+    (function (d, w, id) {
+        if (d.getElementById(id)) return;
+        var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+        ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+        var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+        if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "topmailru-code");
+</script><noscript><div>
+        <img src="//top-fwz1.mail.ru/counter?id=2945281;js=na" style="border:0;position:absolute;left:-9999px;" alt="" />
+    </div></noscript>
+<!-- //Rating@Mail.ru counter -->
+<br>
+<!-- Rating@Mail.ru logo -->
+<a href="https://top.mail.ru/jump?from=2945281">
+    <img src="//top-fwz1.mail.ru/counter?id=2945281;t=467;l=1"
+         style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru" /></a>
+<!-- //Rating@Mail.ru logo -->
 
+<!--Openstat-->
+<span id="openstat2386700"></span>
+<script type="text/javascript">
+    var openstat = { counter: 2386700, image: 5083, color: "8f46b9", next: openstat };
+    (function(d, t, p) {
+        var j = d.createElement(t); j.async = true; j.type = "text/javascript";
+        j.src = ("https:" == p ? "https:" : "http:") + "//openstat.net/cnt.js";
+        var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(j, s);
+    })(document, "script", document.location.protocol);
+</script>
+<!--/Openstat-->
 
+<!--Яндекс. Индекс цитирования - ->
+<a href="http://yandex.ru/cy?base=0&amp;host=metapoznanie.ru"><img src="http://www.yandex.ru/cycounter?мой_сайт" width="88" height="31" alt="Индекс цитирования" border="0" /></a>.
+ -->

@@ -49,7 +49,7 @@ require_once "../php/init_db.php";
 
 <div class="divtxtbp">
 
-<h3 class='h3main'>ЗДЕСЬ ТУТ ФРАГМЕНТЫ<br/>
+<h3 class='h3main'>ЗДЕСЬ ФРАГМЕНТЫ<br/>
 МОЕЙ КАРТИНЫ НАШЕГО МИРА</h3>
 
 <!--<h2 class='h2main'>Здесь,</h2>

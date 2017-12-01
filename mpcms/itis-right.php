@@ -6,8 +6,6 @@
 </script>
 
 
-
-
 <?php require_once "../php/do-itis-right.php" ?>
 
 <br/>
@@ -19,11 +17,12 @@
 <h4>Последние записи</h4>
 <?php echo get_last3t(); ?>
 </div>
-<div class="divtxtb">
-<h4>И последние комментарии</h4>
-<?php echo get_last3c(); ?>
-</div>
 
+<!--<div class="divtxtb">
+<h4>И последние комментарии</h4>
+<?php /*echo get_last3c(); */?>
+</div>
+-->
 <br/>
 <div class="divtxtb">
 	<p  class="p9"><span class="green"><b>Процесс познания</b></span> — сильнейшее удовольствие, способное конкурировать с тяжелыми наркотиками<br/> 
@@ -31,6 +30,7 @@
 	( <i>Источник</i> )</a></p>
 </div>
 <br/>
+
 <div class="divtxtb">
 <h4>Случайная фраза</h4>
 <span id="tvit"><?php echo get_tvit(); ?></span>

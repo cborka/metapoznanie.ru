@@ -50,7 +50,7 @@
 <br/>
 <a href="/test/sess.php" title="Сессии">[Сессии]</a><br/>
 <a href="/php/mpstat1.php" title="Вывод статистики">[Статистика]</a><br/>
-<a href="/test/colors3.html" title="Цвета">[Цвета]</a><br/>
+<a href="/test/colors3.php" title="Цвета">[Цвета]</a><br/>
 
 <!--<a href="/test/xmlhttprequest.html" title="Запросы к серверу. Вызов ПХП">[Запросы]</a><br/>
 <a href="/test1.php" title="TEST PHP">[test1.php]</a><br/>

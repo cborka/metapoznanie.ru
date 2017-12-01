@@ -16,7 +16,7 @@ function get_last3t()
 		  AND b.cat_rf != 2
 		  AND b.cat_rf != 9
 		ORDER BY  b.dt DESC
-		LIMIT 0 , 3
+		LIMIT 0 , 5
 	";
 
 	if (!($q=mysql_query($sql))) 
