@@ -21,8 +21,7 @@ function get_cats()
 	{
     	ero('get_cats: Ошибка: ' . mysql_error() . "\n<br>");
 	}
-	$ret = '<table class="t"><tr><td><b>id</b></td><td><b>rf</b></td><td><b>Категория</b></td><td><b>Входит в</b></td><td><b>О категории</b></td></tr>';
-//	$ret = '<table class="t"><tr><td><b>id</b></td><td><b>Категория</b></td><td><b>Входит в</b></td></tr>';
+	$ret = '<table class="t"><tr><td><b>id</b></td><td><b>rf</b></td><td><b>Категория</b></td><td><b>Входит в</b></td><td><b>О категории</b></td><td> </td></tr>';//	$ret = '<table class="t"><tr><td><b>id</b></td><td><b>Категория</b></td><td><b>Входит в</b></td></tr>';
 	for ($c=0; $c<mysql_num_rows($q); $c++)
 	{
 		$f = mysql_fetch_array($q);
@@ -206,7 +205,7 @@ else if ($mode == "write")
 		write_cat(
 			input_filter($_POST['cat_id']), 
 			input_filter($_POST['category']), 
-			input_filter($_POST['about']), 
+			($_POST['about']),
 			input_filter($_POST['folder'])
 		);
 }

@@ -431,11 +431,14 @@ table.t {
 	border: 1px solid black;
 	width: 99%;
 	vertical-align: top;
+	font-size: 10pt;
+	color:  indigo;
 }
 td {
 	padding-right: 3px;
 	padding-left: 5px;
-	border: 1px solid #c0c;
+	/*border: 1px solid #c0c;*/
+	border: 1px solid #ccc;
 	vertical-align: top;
 }
 
@@ -688,7 +691,7 @@ a:hover {
 	text-decoration: underline;
 }
 a:visited {
-	color: #8a2be2; /* синий */
+	color: #8a2be2;
 }
 
 a.tdnone:hover {
@@ -757,11 +760,13 @@ DIV.alignright {
 .oke { color: green; }
 .mes { color: #707; }
 
-span.pink {
-	color: #ee008c;
-}
-span.red {
-	color: red;
-}span.green {
-	 color: green;
- }
+span.pink {color: #ee008c;}
+span.red {color: red;}
+span.green {color: green;}
+span.maroon {color: maroon;}
+span.purple {color: purple;}
+span.indigo {color: indigo;}
+span.silver {color: silver;}
+span.grey {color: grey;}
+span.black {color: black;}
+span.whiteinblack {color: white; background-color: black}

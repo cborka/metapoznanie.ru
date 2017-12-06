@@ -25,7 +25,7 @@ require_once "../php/init_db.php";
 <div class="wrapper_1">
 <div class="leftcol"> <!-- ЛЕВАЯ КОЛОНКА -->
 
-<?php include "../mpcms/itis-left.php" ?>
+<?php include "../mpcms/itis-left-index.php" ?>
 
 </div> <!-- ЛЕВАЯ КОЛОНКА -->
 
@@ -179,7 +179,10 @@ require_once "../php/init_db.php";
 		
 		<tr><td class="l">О категории</td>
 		<td class="r">
-		<input class='text' type='text' name='about' id='about' value='' maxlength='100' />
+<!--		<input class='text' type='text' name='about' id='about' value='' maxlength='100' />-->
+            <textarea class="ed2" id="about" name="about" maxlength="4096" placeholder="О категории">
+            </textarea>
+
 		</td></tr>
 
 		<tr><td class="l">Пароль</td><td class="r"><input class='text' type='password' name='passwd' id='passwd' value='' maxlength='80' required /></td></tr>
@@ -198,7 +201,7 @@ require_once "../php/init_db.php";
 <?php	} ?>
 <br/>
 <br/ >
-<a href="/index.php">[ На главную ]</a>
+<a href="/">[ На главную ]</a>
 <br/>
 
 
@@ -210,7 +213,7 @@ require_once "../php/init_db.php";
 
 <div class="rightcol"> <!-- ПРАВАЯ КОЛОНКА -->
 
-<?php include "../mpcms/itis-right.php" ?>
+<?php include "../mpcms/itis-right-blog.php" ?>
 
 </div> <!-- ПРАВАЯ КОЛОНКА -->
 

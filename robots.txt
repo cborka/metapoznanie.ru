@@ -2,10 +2,15 @@ User-agent: *
 Allow: /
 Disallow: /cat/
 Disallow: /test/
-Sitemap: http://metapoznanie.ru/sitemap.xml
+Disallow: /mpcms/
+Disallow: /php/
 
 User-agent: Yandex
 Allow: /
 Disallow: /cat/
 Disallow: /test/
-Host: metapoznanie.ru
+Disallow: /mpcms/
+Disallow: /php/
+
+Sitemap: http://metapoznanie.ru/sitemap.xml
+Host:  http://metapoznanie.ru

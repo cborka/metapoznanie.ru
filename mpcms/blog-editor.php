@@ -186,7 +186,6 @@ get_blog_txt_for_edit();
   	class="btn" type='button' id='edb108' value='~' onclick='insert_tag("txt","<span id=\"cutt\"></span>","")' title='Точка обрезки' />
      
   	<input class="btn" type='button' id='edb109' value='A' onclick='insert_tag("txt", "<a  class=\"atxt\" target=\"_blank\"" href=http://metapoznanie.ru  >", "</a>")' title='Ссылка' />
-
   	<input class="btn" type='button' id='edb116' value='<' onclick='insert_tag("txt", "<span >", "</span>")' title='span' />
 
      <!--&nbsp;<input class="btn" type='button' value='br' onclick='insert_tag("txt", "<br />", "")' title='Новая строка' />-->
@@ -210,7 +209,7 @@ get_blog_txt_for_edit();
      
   	<input class="btn" type='button' id='edb9' value='A' onclick='insert_tag("txt", "[адрес=http://metapoznanie.ru  /]", "[/a]")' title='Ссылка' />
      <!--&nbsp;<input class="btn" type='button' value='br' onclick='insert_tag("txt", "<br />", "")' title='Новая строка' />-->
-  	<input class="btn" type='button' id='edb16' value='<' onclick='insert_tag("txt", "[span ]", "[/span]")' title='span' />
+     <input class="btn" type='button' id='edb16' value='<' onclick='insert_tag("txt", "[span  /]", "[/span]")' title='span' />
 
   	<input class="btn" type='button' id='edb10' value='Н1' onclick='insert_tag("txt", "[Н1]", "[/Н1]")' title='Название(заголовок) 1' /><input 
   	class="btn" type='button' id='edb11' value='Н2' onclick='insert_tag("txt", "[Н2]", "[/Н2]")' title='Название(заголовок) 2' /><input 

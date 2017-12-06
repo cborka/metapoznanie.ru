@@ -10,9 +10,11 @@ function get_last3t()
 {
 	$sql = "
 		SELECT b.dt, header, m.logname, url 
-			FROM  mp_texts b
+			FROM  ((mp_texts b
 				LEFT JOIN mp_users m ON m.user_id = b.user_rf
+				LEFT JOIN mp_text_status ON text_rf = text_id))
 		WHERE text_id > 1
+		  AND status_rf = 14 
 		  AND b.cat_rf != 2
 		  AND b.cat_rf != 9
 		ORDER BY  b.dt DESC

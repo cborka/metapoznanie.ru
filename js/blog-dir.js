@@ -563,12 +563,17 @@
 
 	function init_dt()
 	{ 
-	var today = new Date();
-		document.getElementById("dtb").value = '2014-04-24'; SetDtb()
-		document.getElementById("dte").value = formatYYYYMMDD(today); SetDte()
+//	var today = new Date();
+
+	    document.getElementById("dtb").value = '2014-04-24';
+	    SetDtb()
+//        document.getElementById("dte").value = formatYYYYMMDD(today);
+		document.getElementById("dte").value = '2064-04-24';
+	    SetDte()
 		document.getElementById("srtt").value = 'Новые'; SetSrtt();
 //		document.getElementById("srtk").value = 'СКомментариями'; SetSrtk();
-		
+
+
 		refresh_dir();
 	}
 	
