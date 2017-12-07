@@ -647,7 +647,7 @@ function get_tags1()
     	ero('get_tags1: Ошибка: ' . mysql_error() . "\n<br>");
 	}
 
-	$ret = formattag1("", "пусто");
+	$ret = formattag1("", 'все метки'.mysql_num_rows($q));
 	for ($c=0; $c<mysql_num_rows($q); $c++)
 	{
 		$f = mysql_fetch_array($q);

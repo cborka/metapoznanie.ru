@@ -22,6 +22,8 @@ function rpl_buttons()
 		document.getElementById("edb14").hidden = false;
 		document.getElementById("edb15").hidden = false;
 		document.getElementById("edb16").hidden = false;
+        document.getElementById("edb17").hidden = false;
+        document.getElementById("edb18").hidden = false;
 
 		document.getElementById("edb51").hidden = false;
 		document.getElementById("edb52").hidden = false;
@@ -50,7 +52,9 @@ function rpl_buttons()
 		document.getElementById("edb114").hidden = true;
 		document.getElementById("edb115").hidden = true;
 		document.getElementById("edb116").hidden = true;
-		
+        document.getElementById("edb117").hidden = true;
+        document.getElementById("edb118").hidden = true;
+
 		document.getElementById("edb151").hidden = true;
 		document.getElementById("edb152").hidden = true;
 		document.getElementById("edb153").hidden = true;
@@ -82,6 +86,8 @@ function rpl_buttons()
 		document.getElementById("edb14").hidden = true;
 		document.getElementById("edb15").hidden = true;
 		document.getElementById("edb16").hidden = true;
+        document.getElementById("edb17").hidden = true;
+        document.getElementById("edb18").hidden = true;
 
 		document.getElementById("edb51").hidden = true;
 		document.getElementById("edb52").hidden = true;
@@ -110,7 +116,9 @@ function rpl_buttons()
 		document.getElementById("edb114").hidden = false;
 		document.getElementById("edb115").hidden = false;
 		document.getElementById("edb116").hidden = false;
-		
+        document.getElementById("edb117").hidden = true;
+        document.getElementById("edb118").hidden = true;
+
 		document.getElementById("edb151").hidden = false;
 		document.getElementById("edb152").hidden = false;
 		document.getElementById("edb153").hidden = false;

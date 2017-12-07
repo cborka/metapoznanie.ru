@@ -522,7 +522,7 @@ input.link {
 	cursor: pointer;
 }
 
-input.btn, input.btn9 {
+input.btn, input.btn9, input.btngrey, input.btnred {
 	cursor: pointer;
 	color: #444;
 	background-color: #ddd;
@@ -537,6 +537,14 @@ input.btn:hover, input.btn9:hover {
 	background-color: #444;
 	color: #ddd;
 }
+input.btngrey {
+    background-color: grey;
+}
+input.btnred {
+    background-color: red;
+}
+
+
 select {
 	padding-left: 1px;
 	padding-right: 1px;
@@ -763,6 +771,7 @@ DIV.alignright {
 span.pink {color: #ee008c;}
 span.red {color: red;}
 span.green {color: green;}
+span.blue {color: blue;}
 span.maroon {color: maroon;}
 span.purple {color: purple;}
 span.indigo {color: indigo;}
