@@ -27,11 +27,11 @@ function page_not_found()
 
 function get_txt()
 {
-    global $tid, $nik, $dt, $cat_name, $header, $url, $txt, $js1, $is_txt, $url_name, $tag_name, $user_id, $man_id;
+    global $tid, $nik, $dt, $cat_name, $header, $url, $txt, $js1, $is_txt, $url_name, $tag_name, $user_id, $man_id, $tags, $description;
 
 	$is_txt = TRUE;
 	$sql = "
-		SELECT b.text_id, m.logname, b.dt, c.cat_name, b.header, m.user_id, b.about, b.content AS txt 
+		SELECT b.text_id, m.logname, b.dt, c.cat_name, b.header, m.user_id, b.about, b.tags, b.description, b.content AS txt 
 			FROM (( mp_texts b
 				LEFT JOIN mp_cats c ON c.cat_id = b.cat_rf)
 				LEFT JOIN mp_users m ON m.user_id = b.user_rf)
@@ -78,7 +78,10 @@ function get_txt()
 		$cat_name = $f[cat_name];
 		$header = $f[header];
 		$about = $f[about];
+		$description = $f[description];
+        $tags = $f[tags];
 		$txt = $f[txt];
+
 	}
   
 $js1 = " 
@@ -97,6 +100,8 @@ get_txt();
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="keywords" content="<?php echo $tags; ?>">
+    <meta name="description" content="<?php echo $description; ?>">
 	<title><?php echo $header; ?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
