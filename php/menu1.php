@@ -18,11 +18,10 @@ if (isset($_SESSION['ss_nick']) )
 
 <div class="menuitem"><a class='btnm' href="o-temah-etogo-saita"><p class="mmi">О сайте</p></a></div>
 
-<div class="menuitem"><a class='btnm' href="/Tексты" title="Каталог текстов"><p class="mmi">Блог</p></a></div>
+<div class="menuitem"><a class='btnm' href="/cat/Tексты" title="Каталог текстов"><p class="mmi">Блог</p></a></div>
 
 <p class="mmi5">&nbsp;</p>
- 
- 
+
 <!-- <a class='btnm' href="/"><p class="mmi">На главную</p></a><a href="/Tексты" title="Каталог текстов"><p class="mmi">Блог</p></a><a class='btnm' href="/test/colors3.html" title="Цвета"><p class="mmi">Цвета</p></a>
 -->
 

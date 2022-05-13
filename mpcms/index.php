@@ -7,6 +7,9 @@ require_once "../php/init_db.php";
 <head>
 	<title>Метапознание</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
+
+<meta name="yandex-verification" content="07bf232c41b0810c" />
+
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="/css/mp.css?<?php echo $ver; ?>">
 	<style>	</style>

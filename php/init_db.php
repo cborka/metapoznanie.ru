@@ -5,19 +5,20 @@
 	$squery_count =0;
 	$tstart = microtime(true);
 
-// TODO Скрыть данные ввода и не сохранять их в ГИТ
+// TO DO Скрыть данные ввода и не сохранять их в ГИТ
 
-define("DBName","...");
+define("DBName","vh181957_cborka_mp1");
 define("HostName","localhost");
-define("UserName","...");
-define("Password","...");
+define("UserName","vh181957_user");
+//define("Password","432");
+define("Password","B7k4S0n5");
 
 if (!mysql_connect(HostName,UserName,Password)) {
- echo "<br>Ошибка подключения к серверу MySQL";
- exit;
+    echo "<br>Ошибка подключения к серверу MySQL";
+    exit;
 }
 
-if(!mysql_select_db(DBname)) {
+if(!mysql_select_db(DBName)) {
     echo 'Ошибка: ' . mysql_error() . "n<br>";
 }
 

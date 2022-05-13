@@ -104,6 +104,7 @@ get_txt();
     <meta name="description" content="<?php echo $description; ?>">
 	<title><?php echo $header; ?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
+
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="/css/mp.css?<?php echo $ver; ?>">
 	<style>	</style>

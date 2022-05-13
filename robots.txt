@@ -12,5 +12,5 @@ Disallow: /test/
 Disallow: /mpcms/
 Disallow: /php/
 
-Sitemap: http://metapoznanie.ru/sitemap.xml
-Host:  http://metapoznanie.ru
+Sitemap: http://mp.metapoznanie.ru/sitemap.xml
+Host:  http://mp.metapoznanie.ru

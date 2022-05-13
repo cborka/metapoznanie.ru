@@ -12,7 +12,7 @@ header('Content-Type: text/html; charset=UTF8');
 setlocale(LC_ALL, 'ru_RU.UTF-8', 'Russian_Russia.65001');
 
 global $ver;
-$ver = "ver=5"; // Тут нужно вручную обновлять номера версий после исправлений в скриптах .js и .css
+$ver = "ver=11"; // Тут нужно вручную обновлять номера версий после исправлений в скриптах .js и .css
 
 function ero($msg)
 {

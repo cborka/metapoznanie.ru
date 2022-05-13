@@ -1,7 +1,7 @@
 AddType application/x-httpd-php .html .htm
            DirectoryIndex mpcms/index.php
 
-           ErrorDocument 404 /notfound.php
+           ErrorDocument 404 /notfound8.php
 
            #Redirect /php/mpstat5.php /cborka
 

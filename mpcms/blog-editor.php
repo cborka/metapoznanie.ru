@@ -189,7 +189,9 @@ get_blog_txt_for_edit();
   	<input class="btn" type='button' id='edb116' value='<' onclick='insert_tag("txt", "<span >", "</span>")' title='span' />
 
     <input class="btngrey" type='button' id='edb117' value=' <' onclick='insert_tag("txt", "<span class=grey >", "</span>")' title='grey' />
-    <input class="btngred" type='button' id='edb118' value=' <' onclick='insert_tag("txt", "<span class=red >", "</span>")' title='red' />
+    <input class="btnred" type='button' id='edb118' value=' <' onclick='insert_tag("txt", "<span class=red >", "</span>")' title='red' />
+    <input class="btnmaroon" type='button' id='edb119' value=' <' onclick='insert_tag("txt", "<span class=maroon >", "</span>")' title='maroon' />
+    <input class="btnindigo" type='button' id='edb120' value=' <' onclick='insert_tag("txt", "<span class=indigo >", "</span>")' title='indigo' />
 
      <!--&nbsp;<input class="btn" type='button' value='br' onclick='insert_tag("txt", "<br />", "")' title='Новая строка' />-->
 
@@ -215,6 +217,8 @@ get_blog_txt_for_edit();
      <input class="btn" type='button' id='edb16' value='<' onclick='insert_tag("txt", "[span  /]", "[/span]")' title='span' />
      <input class="btngrey" type='button' id='edb17' value=' ' onclick='insert_tag("txt", "[span class=grey /]", "[/span]")' title='grey' />
      <input class="btnred" type='button' id='edb18' value=' ' onclick='insert_tag("txt", "[span class=red /]", "[/span]")' title='red' />
+     <input class="btnmaroon" type='button' id='edb19' value=' ' onclick='insert_tag("txt", "[span class=maroon /]", "[/span]")' title='maroon' />
+     <input class="btnindigo" type='button' id='edb20' value=' ' onclick='insert_tag("txt", "[span class=indigo /]", "[/span]")' title='indigo' />
 
   	<input class="btn" type='button' id='edb10' value='Н1' onclick='insert_tag("txt", "[Н1]", "[/Н1]")' title='Название(заголовок) 1' /><input 
   	class="btn" type='button' id='edb11' value='Н2' onclick='insert_tag("txt", "[Н2]", "[/Н2]")' title='Название(заголовок) 2' /><input 

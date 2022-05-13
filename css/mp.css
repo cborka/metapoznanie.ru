@@ -522,7 +522,7 @@ input.link {
 	cursor: pointer;
 }
 
-input.btn, input.btn9, input.btngrey, input.btnred {
+input.btn, input.btn9, input.btngrey, input.btnred, input.btnmaroon, input.btnindigo {
 	cursor: pointer;
 	color: #444;
 	background-color: #ddd;
@@ -542,6 +542,12 @@ input.btngrey {
 }
 input.btnred {
     background-color: red;
+}
+input.btnmaroon {
+	background-color: maroon;
+}
+input.btnindigo {
+	background-color: indigo;
 }
 
 

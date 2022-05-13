@@ -1,13 +1,13 @@
 <br/>
 <div class="divtxtb">
-<a class="btn" href="/Tексты" title="Блог"><b> МОЙ БЛОГ </b></a><br/>
+<a class="btn" href="/cat/Tексты" title="Блог"><b> МОЙ БЛОГ </b></a><br/>
 </div>
 
 
 
 <div class="divtxtb">
 <a class="btn" href="/o-temah-etogo-saita" title="О сайте">О чём ЭТОТ сайт?</a><br/>
-<a class="btn" href="/inf-gosha" title="Гоша">Мой инф (бот) Гоша</a><br/>
+<!--<a class="btn" href="/inf-gosha" title="Гоша">Мой инф (бот) Гоша</a><br/>-->
 
 <!--
 <a class="btn" href="http://cborka.clan.su/" target="_blank" title="Мои тексты на юкозе">Мой предыдущий сайт</a>
@@ -31,4 +31,14 @@ if (isset($_SESSION['ss_nick']) )
 ?>
 
 </div>
-
+<!--
+<br/>
+    <a class="btn" href="/inf-gosha" title="Гоша">
+        <img src="/img/gosha2.bmp" align="left" hspace="5"alt="" />
+        <br/>
+        Мой инф (бот) Гоша
+        <br/>
+        <br/>
+        <br/>
+    </a>
+-->
